@@ -42,6 +42,28 @@ export class UsersController {
         });
     }
 
+    @UseGuards(AuthGuard)
+    @Patch('')
+    async userUpdate(
+        @Request() req: any,
+        @Response() res: Responses,
+        @Body() body: iUserUpdateBody,
+    ){
+        let user_id = null;
+        try {
+            user_id = new ObjectId(req.user.sub);
+        } catch {
+            return Http({ res, http: Case.UserNotFound });
+        }
+
+        const result = await this.usersService.userUpdate(user_id, body);
+        if(result){
+            return Http({ res, http: Case.Success });
+        }else{
+            return Http({ res, http: Case.FailedToUpdate });
+        }
+    }
+
     @Post('/register')
     async userRegister(
         @Response() res: Responses,
@@ -104,28 +126,6 @@ export class UsersController {
             });
         } else {
             return Http({ res, http: Case.UserNotFound });
-        }
-    }
-
-    @UseGuards(AuthGuard)
-    @Patch('/')
-    async userUpdate(
-        @Request() req: any,
-        @Response() res: Responses,
-        @Body() body: iUserUpdateBody,
-    ){
-        let user_id = null;
-        try {
-            user_id = new ObjectId(req.user.sub);
-        } catch {
-            return Http({ res, http: Case.UserNotFound });
-        }
-
-        const result = await this.usersService.userUpdate(user_id, body);
-        if(result){
-            return Http({ res, http: Case.Success });
-        }else{
-            return Http({ res, http: Case.FailedToUpdate });
         }
     }
 }

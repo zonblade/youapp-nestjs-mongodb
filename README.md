@@ -113,7 +113,8 @@ Content-Type: application/json
 #### Update Profile
 
 ```http
-PATCH /users/
+PATCH /users
+Authorization: Bearer token
 ```
 
 ```json
