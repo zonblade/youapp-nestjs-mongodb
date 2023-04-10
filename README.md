@@ -6,6 +6,10 @@
 
 A brief description of what this project does and who it's for
 
+challenge:
+- Challenge A : CRUD
+- Challenge B : Websocket (without Kafka, reason: my machine does not have kafka, installing and set it up takes time. I can do it anyway)
+
 resulting `RFC7807` format as follows \
 all error resulting `400`, created resulting `201` \
 all success resulting `200`
