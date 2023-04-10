@@ -1,0 +1,1 @@
+use [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) on vsCode to test the API

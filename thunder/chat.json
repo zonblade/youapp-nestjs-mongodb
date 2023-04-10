@@ -1,0 +1,45 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "youapp-chat-documentation",
+    "dateExported": "2023-04-09T23:57:32.796Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "cae8388c-86a7-43c9-b2f2-c24308562298",
+            "colId": "cdf335c3-8b33-4b5b-a516-d5d291a489e2",
+            "containerId": "",
+            "name": "get chat list",
+            "url": "http://localhost:3031/chats",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-04-09T20:55:49.492Z",
+            "modified": "2023-04-09T23:11:41.283Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDMyZmNjMDdmMTZhYjM4MjY5ZmE5MWIiLCJ1c2VybmFtZSI6InN0cmluZyIsImlhdCI6MTY4MTA3OTQ4NSwiZXhwIjoxNjgzNjcxNDg1fQ.c29r7KqqHCIm0NyJ2GnmOBFqWBxoVhxH7UbKJt_-wkg"
+            },
+            "tests": []
+        },
+        {
+            "_id": "283267fa-c643-44e4-8448-6bcaa296d5b4",
+            "colId": "cdf335c3-8b33-4b5b-a516-d5d291a489e2",
+            "containerId": "",
+            "name": "chat history internal",
+            "url": "http://localhost:3031/chats/64333e0dc57ff31598bae585",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-04-09T20:55:58.252Z",
+            "modified": "2023-04-09T23:22:04.443Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDMyZmNjMDdmMTZhYjM4MjY5ZmE5MWIiLCJ1c2VybmFtZSI6InN0cmluZyIsImlhdCI6MTY4MTA3OTQ4NSwiZXhwIjoxNjgzNjcxNDg1fQ.c29r7KqqHCIm0NyJ2GnmOBFqWBxoVhxH7UbKJt_-wkg"
+            },
+            "tests": []
+        }
+    ]
+}

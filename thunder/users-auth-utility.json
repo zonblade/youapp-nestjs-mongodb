@@ -1,0 +1,137 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "youapp-main-documentation",
+    "dateExported": "2023-04-09T23:57:18.582Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "5f9f0d28-751d-4e1b-a4a2-0482dc0c664e",
+            "colId": "340ba0fd-d49f-4410-a91a-98197758957e",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:3031/users/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-04-09T20:54:10.259Z",
+            "modified": "2023-04-09T21:39:52.567Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"username\": \"string\",\n    \"password\": \"string\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4d3d4547-ed1d-4381-9167-c0cef5abacda",
+            "colId": "340ba0fd-d49f-4410-a91a-98197758957e",
+            "containerId": "",
+            "name": "register",
+            "url": "http://localhost:3031/users/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-04-09T20:54:16.477Z",
+            "modified": "2023-04-09T22:57:37.409Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Agugn2\",\n  \"username\":\"hehe\",\n  \"password\":\"testing\",\n  \"email\":\"testing@test.te\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "be9e6df3-70e1-4516-bf15-39fba2643fdd",
+            "colId": "340ba0fd-d49f-4410-a91a-98197758957e",
+            "containerId": "",
+            "name": "Search User List",
+            "url": "http://localhost:3031/users?search=st",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-04-09T20:54:38.744Z",
+            "modified": "2023-04-09T23:12:35.997Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "search",
+                    "value": "st",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDMyZmNjMDdmMTZhYjM4MjY5ZmE5MWIiLCJ1c2VybmFtZSI6InN0cmluZyIsImlhdCI6MTY4MTA3OTQ4NSwiZXhwIjoxNjgzNjcxNDg1fQ.c29r7KqqHCIm0NyJ2GnmOBFqWBxoVhxH7UbKJt_-wkg"
+            },
+            "tests": []
+        },
+        {
+            "_id": "a9870030-c297-41a5-8f70-9ab4960cae14",
+            "colId": "340ba0fd-d49f-4410-a91a-98197758957e",
+            "containerId": "",
+            "name": "Get User Data",
+            "url": "http://localhost:3031/users/6432fcc07f16ab38269fa91b",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-04-09T20:54:46.260Z",
+            "modified": "2023-04-09T23:12:24.179Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDMyZmNjMDdmMTZhYjM4MjY5ZmE5MWIiLCJ1c2VybmFtZSI6InN0cmluZyIsImlhdCI6MTY4MTA3OTQ4NSwiZXhwIjoxNjgzNjcxNDg1fQ.c29r7KqqHCIm0NyJ2GnmOBFqWBxoVhxH7UbKJt_-wkg"
+            },
+            "tests": []
+        },
+        {
+            "_id": "5bf9cfd1-b1d5-440d-9781-ccc580703604",
+            "colId": "340ba0fd-d49f-4410-a91a-98197758957e",
+            "containerId": "",
+            "name": "update profile",
+            "url": "http://localhost:3031/users/",
+            "method": "PATCH",
+            "sortNum": 50000,
+            "created": "2023-04-09T20:54:56.214Z",
+            "modified": "2023-04-09T23:12:12.167Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"agung marabas\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDMyZmNjMDdmMTZhYjM4MjY5ZmE5MWIiLCJ1c2VybmFtZSI6InN0cmluZyIsImlhdCI6MTY4MTA3OTQ4NSwiZXhwIjoxNjgzNjcxNDg1fQ.c29r7KqqHCIm0NyJ2GnmOBFqWBxoVhxH7UbKJt_-wkg"
+            },
+            "tests": []
+        },
+        {
+            "_id": "3745d130-b121-4cca-955a-33d17cb6fd49",
+            "colId": "340ba0fd-d49f-4410-a91a-98197758957e",
+            "containerId": "",
+            "name": "utils file uploader",
+            "url": "http://localhost:3031/utility/file-upload",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-04-09T20:56:16.536Z",
+            "modified": "2023-04-09T22:56:10.897Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [],
+                "files": [
+                    {
+                        "name": "file",
+                        "value": "/Users/zonblade/Desktop/Screenshot 2023-04-09 at 04.26.30.png"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ]
+}
