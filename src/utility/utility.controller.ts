@@ -3,7 +3,8 @@ import {
     Post,
     UploadedFile,
     UseInterceptors,
-    Response
+    Response,
+    UseGuards
 } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { diskStorage } from 'multer';
@@ -12,9 +13,12 @@ import { v4 as uuidv4 } from 'uuid';
 import { Http, Case } from 'src/common.interface';
 import { Uploaded } from './interface/upload.interface';
 import { Response as Responses } from 'express';
+import { AuthGuard } from 'src/lib/jwt.verify';
 
 @Controller('utility')
 export class UtilityController {
+    
+    @UseGuards(AuthGuard)
     @Post('/file-upload')
     @UseInterceptors(
         FileInterceptor('file', {
